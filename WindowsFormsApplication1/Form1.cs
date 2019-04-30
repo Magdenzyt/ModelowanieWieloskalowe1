@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         int elements;
         int size;
         int wersja;
-        int epoki = 100;
+        int epoki;
 
         List<Boolean> beginTab;
         List<bool> nextTab;
@@ -52,6 +52,7 @@ namespace WindowsFormsApplication1
             if (!(string.IsNullOrWhiteSpace(textBox1.Text) && string.IsNullOrWhiteSpace(comboBox1.Text)))
             {
                 elements = int.Parse(textBox1.Text);
+                epoki = int.Parse(textBox2.Text);
                 wersja = int.Parse(comboBox1.Text);
 
                 string wersjaBin = "00000000" + Convert.ToString(wersja, 2);
@@ -124,6 +125,11 @@ namespace WindowsFormsApplication1
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
         {
 
         }
